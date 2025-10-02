@@ -8,7 +8,7 @@ local config = {
 	indent = {
 		enable = true,
 	},
-	ensure_installed = "your-language", -- ensure parser is installed
+	ensure_installed = "timur",
 }
 
 function M.setup(opts)
