@@ -1,16 +1,5 @@
 local M = {}
 
-local config = {
-	highlight = {
-		enable = true,
-		additional_vim_regex_highlighting = false,
-	},
-	indent = {
-		enable = true,
-	},
-	ensure_installed = "timur",
-}
-
 function M.setup(opts)
 	opts = opts or {}
 	config = vim.tbl_deep_extend("force", config, opts)
