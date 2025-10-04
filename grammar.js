@@ -166,7 +166,7 @@ module.exports = grammar({
           field("return_type", $.type_name),
           field("name", $.identifier),
           "(",
-          field("parameters", repeat($.argument)),
+          field("parameters", seq($.argument, repeat(seq(",", $.argument)))),
           ")",
           "is",
           field("body", optional(repeat($.statement))),
@@ -175,7 +175,7 @@ module.exports = grammar({
         seq(
           "this",
           "(",
-          field("parameters", repeat($.argument)),
+          field("parameters", seq($.argument, repeat(seq(",", $.argument)))),
           ")",
           "is",
           field("body", optional(repeat($.statement))),
