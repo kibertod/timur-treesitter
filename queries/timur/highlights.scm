@@ -44,8 +44,8 @@
   (class base_classes: (identifier))
 ] @type
 
-(expression method: (identifier)) @function.method
-(expression member: (identifier)) @variable.member
+(expression method: (identifier) @function.method)
+(expression member: (identifier) @variable.member)
 
 [
  "this"
