@@ -1,10 +1,10 @@
-local timur_treesitter = {}
+local ts_timur = {}
 
-function timur_treesitter.setup(opts)
+function ts_timur.setup(opts)
 	local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 	parser_config.timur = {
 		install_info = {
-			url = "https://github.com/kibertod/timur-treesitter",
+			url = "https://github.com/kibertod/nvim-treesitter-timur",
 			files = { "src/parser.c" },
 			branch = "master",
 		},
@@ -18,5 +18,5 @@ function timur_treesitter.setup(opts)
 	vim.treesitter.language.register("timur", "tmr")
 end
 
-_G.timur_treesitter = timur_treesitter
-return _G.timur_treesitter
+_G.ts_timur = ts_timur
+return _G.ts_timur
