@@ -10,6 +10,12 @@ function timur_treesitter.setup(opts)
 		},
 		filetype = "tmr",
 	}
+	vim.filetype.add({
+		extension = {
+			tmr = "tmr",
+		},
+	})
+	vim.treesitter.language.register("timur", "tmr")
 end
 
 _G.timur_treesitter = timur_treesitter
