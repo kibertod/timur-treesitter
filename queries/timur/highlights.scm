@@ -36,7 +36,10 @@
   "false"
 ] @boolean
 
-(type_name name: (identifier)) @type
+[
+  (type_name name: (identifier))
+  (class base_classes: (identifier))
+] @type
 
 [
  "this"
