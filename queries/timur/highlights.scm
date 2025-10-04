@@ -17,4 +17,4 @@
 ] @keyword
 
 ; Literals
-(literal string: (lit_str) @string)
+(literal string: (lit_str)) @string
