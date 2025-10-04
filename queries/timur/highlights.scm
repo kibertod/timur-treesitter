@@ -44,7 +44,7 @@
 (class base_classes: (identifier) @type)
 (expression method: (identifier) @function.method.call)
 (expression member: (identifier) @variable.member)
-(member_delcaration name: (identifier) @function.method)
+(member_declaration name: (identifier) @function.method)
 
 [
  "this"
