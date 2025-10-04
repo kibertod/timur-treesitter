@@ -36,8 +36,8 @@
   "false"
 ] @boolean
 
-(type_name name: (identifier)) @type
 (identifier) @variable
+(type_name name: (identifier)) @type
 
 [
  "this"
