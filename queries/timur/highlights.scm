@@ -2,22 +2,14 @@
 (comment) @comment
 
 ; Keywords
-[
-  "var"
-  "is"
-  "end"
-] @keyword
+"var" @keyword
 "class" @keyword.type
 "extends" @keyword.modifier
 "return" @keyword.return
-[
-  "while"
-  "loop"
-] @keyword.repeat
+"while" @keyword.repeat
 [
   "if"
   "elif"
-  "then"
 ] @keyword.conditional
 
 ; Punctuation
@@ -31,6 +23,10 @@
  "]"
  "("
  ")"
+ "is"
+ "then"
+ "loop"
+ "end"
 ] @punctuation.bracket
 
 ; Operators
