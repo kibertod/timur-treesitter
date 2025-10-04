@@ -1,6 +1,6 @@
 local timur_treesitter = {}
 
-function timur_treesitter.setup()
+function timur_treesitter.setup(opts)
 	local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 	parser_config.timur = {
 		install_info = {
