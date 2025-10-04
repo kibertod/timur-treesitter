@@ -218,6 +218,10 @@
         "required": false,
         "types": [
           {
+            "type": ",",
+            "named": false
+          },
+          {
             "type": "argument",
             "named": true
           }
@@ -440,10 +444,6 @@
   },
   {
     "type": ":=",
-    "named": false
-  },
-  {
-    "type": "=",
     "named": false
   },
   {
