@@ -1,20 +1,31 @@
 ; Comments
 (comment) @comment
 
-; Keywords
+; Language structure
 [
   "return"
   "class"
-  "if"
-  "elif"
-  "is"
-  "end"
   "extends"
   "var"
-  "then"
-  "loop"
-  "while"
 ] @keyword
+
+[
+  "while"
+  "loop"
+] @repeat
+
+[
+  "if"
+  "elif"
+  "then"
+] @conditional
+
+":=" @operator
+
+[
+  "is"
+  "end"
+] @delimeter
 
 ; Literals
 (literal string: (lit_str)) @string
@@ -24,3 +35,4 @@
   "true"
   "false"
 ] @boolean
+
