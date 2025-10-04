@@ -1,36 +1,47 @@
 ; Comments
 (comment) @comment
 
-; Language structure
+; Keywords
 [
-  "return"
-  "class"
-  "extends"
   "var"
+  "is"
+  "end"
 ] @keyword
-
+"class" @keyword.type
+"extends" @keyword.modifier
+"return" @keyword.return
 [
   "while"
   "loop"
-] @repeat
-
+] @keyword.repeat
 [
   "if"
   "elif"
   "then"
-] @conditional
+] @keyword.conditional
 
-":=" @operator
+; Punctuation
+[
+  ":"
+  ","
+] @punctuation.delimeter
 
 [
-  "is"
-  "end"
-] @delimeter
+ "["
+ "]"
+ "("
+ ")"
+] @punctuation.bracket
+
+; Operators
+":=" @operator
 
 ; Literals
 (literal string: (lit_str)) @string
-(literal integer: (lit_int)) @number
-(literal real: (lit_real)) @float
+[
+  (literal integer: (lit_int))
+  (literal real: (lit_real))
+] @number
 [
   "true"
   "false"
