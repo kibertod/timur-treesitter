@@ -39,11 +39,9 @@
   "false"
 ] @boolean
 
-[
-  (type_name name: (identifier))
-  (class base_classes: (identifier))
-] @type
-
+(identifier) @variable
+(type_name name: (identifier) @type)
+(class base_classes: (identifier) @type)
 (expression method: (identifier) @function.method)
 (expression member: (identifier) @variable.member)
 
