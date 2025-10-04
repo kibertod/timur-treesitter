@@ -10,4 +10,11 @@
     "is"
     "end"
     "extends"
+    "var"
+    "then"
+    "loop"
+    "while"
 ] @keyword
+
+; Literals
+(literal string: (lit_str) @string)
