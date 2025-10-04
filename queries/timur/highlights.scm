@@ -8,6 +8,7 @@
 [
   "if"
   "elif"
+  "else"
 ] @keyword.conditional
 
 [
@@ -16,8 +17,6 @@
   "."
 ] @punctuation.delimeter
 [
- "["
- "]"
  "("
  ")"
  "is"
@@ -25,6 +24,10 @@
  "loop"
  "end"
 ] @punctuation.bracket
+[
+ "["
+ "]"
+] @punctuation.special
 
 ":=" @operator
 
@@ -40,6 +43,9 @@
   (type_name name: (identifier))
   (class base_classes: (identifier))
 ] @type
+
+(expression method: (identifier)) @function.method
+(expression member: (identifier)) @variable.member
 
 [
  "this"
