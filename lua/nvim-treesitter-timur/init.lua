@@ -1,6 +1,6 @@
-local ts_timur = {}
+local nvim_treesitter_timur = {}
 
-function ts_timur.setup(opts)
+function nvim_treesitter_timur.setup(opts)
 	local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 	parser_config.timur = {
 		install_info = {
@@ -18,5 +18,5 @@ function ts_timur.setup(opts)
 	vim.treesitter.language.register("timur", "tmr")
 end
 
-_G.ts_timur = ts_timur
-return _G.ts_timur
+_G.nvim_treesitter_timur = nvim_treesitter_timur
+return _G.nvim_treesitter_timur
