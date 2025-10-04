@@ -36,7 +36,6 @@
   "false"
 ] @boolean
 
-(identifier) @variable
 (type_name name: (identifier)) @type
 
 [
