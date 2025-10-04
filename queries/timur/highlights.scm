@@ -42,8 +42,9 @@
 (identifier) @variable
 (type_name name: (identifier) @type)
 (class base_classes: (identifier) @type)
-(expression method: (identifier) @function.method)
+(expression method: (identifier) @function.method.call)
 (expression member: (identifier) @variable.member)
+(member_delcaration name: (identifier) @function.method)
 
 [
  "this"
