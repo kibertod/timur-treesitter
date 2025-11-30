@@ -1,5 +1,6 @@
 ; Keywords
 "var" @keyword
+"void" @keyword
 "class" @keyword.type
 "extends" @keyword.modifier
 "return" @keyword.return
