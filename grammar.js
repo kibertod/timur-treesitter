@@ -163,19 +163,7 @@ module.exports = grammar({
     member_declaration: ($) =>
       choice(
         seq(
-          field("name", $.identifier),
-          "(",
-          field(
-            "parameters",
-            optional(seq($.argument, repeat(seq(",", $.argument)))),
-          ),
-          ")",
-          "is",
-          field("body", optional(repeat($.statement))),
-          "end",
-        ),
-        seq(
-          field("return_type", $.type_name),
+          field("return_type", optional($.type_name)),
           field("name", $.identifier),
           "(",
           field(
