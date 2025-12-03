@@ -38,7 +38,7 @@
             "named": false
           },
           {
-            "type": "identifier",
+            "type": "type_name",
             "named": true
           }
         ]

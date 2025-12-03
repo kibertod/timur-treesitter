@@ -20,7 +20,7 @@ module.exports = grammar({
             field(
               "base_classes",
               optional(
-                seq($.identifier, optional(repeat(seq(",", $.identifier)))),
+                seq($.type_name, optional(repeat(seq(",", $.type_name)))),
               ),
             ),
           ),
