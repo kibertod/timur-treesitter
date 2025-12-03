@@ -78,6 +78,17 @@ module.exports = grammar({
         ),
         seq(
           "super",
+          ".",
+          field("parent", $.type_name),
+          "(",
+          field(
+            "arguments",
+            optional(seq($.expression, repeat(seq(",", $.expression)))),
+          ),
+          ")",
+        ),
+        seq(
+          "super",
           "(",
           field(
             "arguments",
