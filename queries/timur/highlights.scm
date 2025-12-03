@@ -46,7 +46,7 @@
 
 ; Types
 (type_name name: (identifier) @type)
-(class base_classes: (identifier) @type)
+; (class base_classes: (type_name) @type)
 
 ; Functions
 (expression method: (identifier) @function.method.call)
